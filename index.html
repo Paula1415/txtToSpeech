@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <title>Audiolecture</title>
+</head>
+<body>
+    <header>Audiolecture</header>
+    <div>
+        <label class="labl" for="rate">Rate:</label>
+        <input  name="rate" class="speed-bar uk-progress" type="range" min="0" max="10" step="0.1">
+
+        <label class="labl" for="pitch">Pitch:</label>
+        <input name="pitch" class="pitch-bar uk-progress" type="range" min="0" max="10" step="0.1">
+    </div>
+
+    <div class="flex-parent jc-center">
+        <select name="voice" id="voices" class="language-selector uk-button uk-button-primary" >
+            <option value=""> Select a Language/Voice</option>
+        </select>
+    </div>
+    <div class="txtarea">
+        <textarea name="text" rows="10" cols="70"> hello i love js</textarea>
+    </div>
+
+    <div class="flex-parent jc-center">
+        <button id="speak" class="speak-btn main-buttons">speak</button>
+        <button id="stop" class="stop-btn main-buttons">Stop</button>
+    </div>
+    <!-- main script -->
+    <script src="./main.js"></script>
+</body>
+</html>
